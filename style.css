@@ -1,0 +1,663 @@
+@font-face {
+    font-family: "CursorGothic";
+    src: url("./assets/fonts/CursorGothic-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "CursorGothic";
+    src: url("./assets/fonts/CursorGothic-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "CursorGothic";
+    src: url("./assets/fonts/CursorGothic-Italic.woff2") format("woff2");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face{
+    font-family: "CursorGothic";
+    src: url("./assets/fonts/CursorGothic-BoldItalic.woff2") format("woff2");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "CursorGothic";
+}
+body{
+    background-color: #1d1d1d;
+    background-color: #14120b;
+    color: #fff;
+}
+
+nav{
+    background-color: #14120b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1300px;
+    width: 100%;
+    height: 52px;
+    margin: 0 auto;
+}
+
+.logo{
+    margin-top: 0.35rem;
+    margin-right: 1rem;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    font-family: CursorGothic;
+    font-size: 0.875rem;
+    font-weight: 400;
+    gap: 2rem;
+    margin-left: 2.1rem;
+}
+.nav-links a{
+    /* border: 2px solid red; */
+    color: #edecec;
+    text-decoration: none;
+}
+
+.nav-btn{
+    gap: 7px;
+}
+.signin-btn{
+    width: 66px;
+    height: 27px;
+    background-color: transparent;
+    color: #EDECEC;
+    font-size: 14px;
+    padding: 4px 10px;
+    border: 1px solid #3f3d38;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.download-btn{
+    width: 87px;
+    height: 27px;
+    background-color: #edecec;
+    color: #14120b;
+    font-size: 14px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main{
+    max-width: 1300px;
+    margin: auto;
+    width: 100%;
+}
+
+.hero-section{
+    width: 100%;
+    padding: 112px 0px 18px;
+}
+
+.main-content{
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    margin: 0px 0px 56px;
+    flex-direction: column;
+}
+.main-content h1{
+    font-family: CursorGothic;
+    font-weight: 400;
+    font-size: 1.62rem;
+    margin-bottom: 1.5rem;
+}
+.main-content button{
+    width: 14rem;
+    border: none;
+    border-radius: 3.40282e38px;
+    font-family: CursorGothic;
+    font-weight: 400;
+    font-size: 0.95rem;
+    padding: 0.78em 1.35em 0.85em;
+    cursor: pointer;
+}
+.download-icon {
+    font-family: "CursorGothic";
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.img-content{
+    position: relative;
+    width: 100%;
+    height: min(780px,70vh);
+    min-height: 680px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+.bg-img{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.editor-img{
+    border-radius: 10px;
+    z-index: 10;
+    position: absolute;
+    bottom: 2.2rem;
+    left: 8.2rem;
+    overflow: hidden;
+    width: 1040px;
+    height: 616px;
+}
+
+
+.clients{
+    margin-bottom: 50px;
+}
+.clients h2{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+    gap: 10px;
+    font-size: 1rem;
+}
+.clients-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 8px;
+    background-color: #1b1913;
+    height: 6.25rem;
+    border-radius: 6px;
+}
+.clients-logo img{
+    object-fit: contain;
+    display: block;
+    width: 5.5rem;
+}
+
+
+.f1, .join{
+    width: 100%;
+    background-color: #1b1913;
+    padding: 1.1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+.f1 .text, .join .text{
+    font-weight: 400;
+    font-family: CursorGothic;
+    font-size: 1.37rem;
+    padding: 1.5rem 1.5rem 1.5rem 0rem;
+    margin-right: 0.4rem;
+}
+.f1 .text h4{
+    font-weight: 400;
+}
+.f1 .text p, .join .text p{
+    color: #999896;
+}
+.f1 img, .join img{
+    border-radius: 0.3rem;
+    width: 52.5rem;
+}
+.f1 .text button, .join .text button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #F54E00;
+    margin-top: 1rem;
+}
+
+.join .text p{
+    font-weight: 400;
+    color: #edecec;
+    margin-right: 2.4rem;
+}
+.join{
+    margin: 2rem 0rem 10rem 0rem;
+}
+
+
+.f2{
+    width: 100%;
+    background-color: #1b1913;
+    padding: 1.1rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+.f2 .text{
+    font-weight: 400;
+    font-family: CursorGothic;
+    font-size: 1.35rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.8rem;
+    margin-right: 0.4rem;
+}
+.f2 .text h4{
+    font-weight: 400;
+}
+.f2 .text p{
+    color: #999896;
+}
+.f2 img{
+    border-radius: 0.3rem;
+    width: 52.5rem;
+}
+.f2 .text button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #F54E00;
+    margin-top: 1rem;
+}
+
+
+.f3{
+    width: 100%;
+    background-color: #1b1913;
+    padding: 1.1rem 0rem;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+.f3 .text{
+    font-weight: 400;
+    font-family: CursorGothic;
+    font-size: 1.35rem;
+    padding: 1.5rem 1.5rem 1.5rem 0rem;
+    margin-right: 0.4rem;
+}
+.f3 .text h4{
+    font-weight: 400;
+}
+.f3 .text p{
+    color: #999896;
+}
+.f3 img{
+    border-radius: 0.3rem;
+    width: 52.5rem;
+}
+.f3 .text button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #F54E00;
+    margin-top: 1rem;
+}
+
+.review-cards{
+    margin: 8rem 0;
+}
+.review-cards h2{
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.6rem;
+}
+.card{
+    display: flex;
+    background-color: #1b1913;
+    border-radius: 4px;
+    padding: 1.5rem 1.5rem 1.25rem;
+    flex-direction: column;
+    gap: 3.25rem;
+}
+.card .content{
+    font-family: "CursorGothic";
+    font-size: 0.9375rem;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #edecec;
+    margin: 0;
+}
+.about-person{
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: auto;
+}
+.about-person img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10%;
+}
+.about-person .name{
+    font-family: "CursorGothic";
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #edecec;
+}
+.about-person .work{
+    font-family: "CursorGothic";
+    font-size: 0.8125rem;
+    color: #999896;
+    margin: 0.15rem 0 0;
+}
+
+
+
+.frontier  h2{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    text-align: left;
+}
+
+
+.frontier-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.frontier-card{
+    background-color: #1D1C1A;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 4px;
+}
+.frontier-card .text{
+    width: 100%;
+}
+.frontier-card .text p{
+    color: #848380;
+    line-height: 1.5;
+}
+.frontier-card .text span{
+        color: #fff;
+}
+.frontier-card button{
+    color: #F54E00;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: var(--font-sm);
+    margin: 1rem 0;
+}
+
+
+.change-log{
+    margin: 4rem 0;
+    padding: 4rem 0;
+}
+.change-log h2{
+    font-size: 1.625rem;
+    font-weight: 400;
+    margin-bottom: 1.3rem;
+}
+.log-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8rem;
+}
+.log-card{
+    background-color: #1b1913;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    gap: 1rem;
+    justify-content: center;
+}
+.log-card .text{
+    font-weight: 400;
+    color: #edecec;
+}
+.log-card .date{
+    color: #999896;
+}
+.card-heading{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.card-heading span{
+    padding: 2px 10px;
+    font-size: 14px;
+    border: 2px solid #ebecec4d;
+    border-radius: 50px;
+    color: oklab(0.943853 0.00107113 0.000336707 / 0.6);
+}
+.change-log button{
+    border: none;
+    outline: none;
+    color: #F54E00;
+    background-color: transparent;
+    margin-top: 1.5rem ;
+    font-size: 1.01rem;
+}
+
+
+
+.recent-highlights{
+    background-color: #1b1913;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem;
+}
+.recent-highlights .content{
+    max-width: 1300px;
+    width: 1300px;
+    display: flex;
+    gap: 10rem;
+}
+.recent-highlights .content p{
+    font-size: 1rem;
+}
+.highlights-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.highlights-container .card{
+    padding: 1rem;
+    background-color: #201e18;
+    border-radius: 4px;
+}
+.highlights-container .card .top{
+    padding: 0 2rem 2rem 0;
+    line-height: 1.5rem;
+}
+.top span{
+    color: #979a98;
+}
+.highlights-container .card .bottom{
+    color: #9b9a98;
+}
+
+.highlights-container button{
+    border: none;
+    align-self: flex-start;
+    outline: none;
+    color: #f54e07;
+    background-color: transparent;
+    margin-top: calc(1rem * 1.4);
+    font-size: 1rem;
+}
+
+
+
+.try-section{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-block-end: calc(1rem * 1.4 * 6);
+    padding-block-start: calc(1rem * 1.4 * 6);
+}
+.try-container{
+    max-width: 1300px;
+    width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+}
+.try-container h1{
+    font-weight: 400;
+    font-size: 4.5rem;
+}
+.try-container button{
+    border: 1px solid #ebecec;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: .78em 1.35em .8em;
+    line-height: 1;
+    border-radius: 3.40282e38px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    justify-content: center;
+    gap: 4px;
+}
+
+
+.footer-list{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    padding: 4rem 0;
+    flex-direction: column;
+    background-color: #1b1913;
+}
+.footer-link-container{
+    max-width: 1300px;
+    width: 1300px;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.footer-grid ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-grid .top-text{
+    color: #999896;
+}
+
+.footer-grid a{
+    text-decoration: none;
+    color: #e0e6ec;
+}
+
+
+footer{
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1b1913;
+}
+.copyright-section{
+    width: 100vw;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.copy-right{
+    max-width: 1300px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    width: 1300px;
+}
+
+.copy-right-right{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.themebtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    border-radius: 3.40282e38px;
+    background-color: #26241e;
+    padding: 0 8px;
+}
+
+
+.themebtn button:first-child{
+    opacity: 1;
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: #3A3933;
+}
+
+.themebtn button{
+    background-color: transparent;
+    color: #fff;
+    opacity: .4;
+    outline: none;
+    border: none;
+    padding: 8px 0;
+}
+
+
+.lang{
+    display: flex;
+    gap: 10px;
+    background-color: #26241E;
+    padding: 4px 10px;
+    font-size: 0.875rem;
+    align-items: center;
+    border-radius: 3.40282e38px;
+}
+
+.down-arrow{
+    font-feature-settings: "ss09";
+}
+
+
+
+
+
