@@ -16,5 +16,12 @@ https://cursor-assignment.netlify.app/
 - Custom fonts and assets
 - Deployed using Netlify
 
+
+## Preview
+
+![Cursor Landing Page Clone](cursor_ss.png)
+
+
+
 ## Sidenote
 - thanks brother for being cooperative.
